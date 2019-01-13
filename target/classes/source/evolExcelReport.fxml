@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone = "no"?>
+
+<!--
+id:导出模板唯一标识，与文件名保持一致
+fileName:导出文件名
+-->
+
+<excel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="" fileName="com.evolution.report" templeteFile="template/Evolution_Report" extention="xlsm">
+    <!--
+    name:sheet名称
+    batchSize:数据导出的时候用分页的方式查询导出，一次性导出的数据量
+    voClassName:VO类全名
+    DataProvider:数据提供类，实现IDataProvider接口；spring Bean
+    -->
+    <sheet
+    name="ochEvolutionResult" displayName="en_US:Not IncorPorate OCh;zh_CN:未收编OCh" beginRowIndex="2" batchSize="3000"
+    voClassName="OchEvolutionResultInfo"
+    dataProvider="">
+        <column name="index" type="int" fieIdName="index"/>
+        <column name="ochGroupId" type="String" fieIdName="ochGroupId"/>
+
+    </sheet>
+
+
+
+
+</excel>

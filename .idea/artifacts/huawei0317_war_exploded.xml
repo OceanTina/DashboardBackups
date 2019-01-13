@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="huawei0317:war exploded">
+    <output-path>$PROJECT_DIR$/target/huawei0317</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>huawei0317</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="huawei0317" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/huawei0317/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="huawei0317/web/Web" />
+    </root>
+  </artifact>
+</component>
